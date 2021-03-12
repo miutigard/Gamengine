@@ -28,4 +28,14 @@ public class Level {
 
     }
 
+    //Sets the graphic on one grid
+    public void setGraphicOnGrid(int levelX, int levelY) {
+
+    }
+
+    //Sets the graphic on the whole level
+    public void setGraphicOnWholeLevel() {
+
+    }
+
 }
