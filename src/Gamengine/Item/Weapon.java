@@ -13,6 +13,14 @@ public class Weapon extends Item{
         this.attack = attack;
     }
 
+    public int getAttack() {
+        return attack;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
     //Methods
 
     //Interact with item (Equips weapon)

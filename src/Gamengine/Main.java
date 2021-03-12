@@ -1,6 +1,8 @@
 package Gamengine;
 
 import Gamengine.Character.PlayerCharacter;
+import Gamengine.Item.Armor;
+import Gamengine.Item.Item;
 
 public class Main {
 
@@ -19,6 +21,10 @@ public class Main {
 
         System.out.println(Markus);
         System.out.println(Sebastian);
+
+        Armor chestpiece = new Armor("Leather Armor", 20 , 10);
+
+        System.out.println(chestpiece.getName());
 
     }
 }
