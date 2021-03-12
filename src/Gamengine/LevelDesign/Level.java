@@ -7,6 +7,30 @@ public class Level {
 
     int levelX, levelY;
 
+    public Level() {
+
+    }
+
+    public Level(int levelX, int levelY) {
+        this.levelX = levelX;
+        this.levelY = levelY;
+    }
+
+    public int getLevelX() {
+        return levelX;
+    }
+
+    public void setLevelX(int levelX) {
+        this.levelX = levelX;
+    }
+
+    public int getLevelY() {
+        return levelY;
+    }
+
+    public void setLevelY(int levelY) {
+        this.levelY = levelY;
+    }
 
     //Methods
 
