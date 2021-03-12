@@ -1,9 +1,13 @@
 package Gamengine.Character;
 
+import Gamengine.Item.Item;
+
 public abstract class Characters {
 
     String name, graphics;
     int hitPoints, attack, defence;
+    Item weapon;
+    Item armor;
 
     public Characters() {
     }
@@ -54,5 +58,21 @@ public abstract class Characters {
 
     public void setDefence(int defence) {
         this.defence = defence;
+    }
+
+    public Item getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Item weapon) {
+        this.weapon = weapon;
+    }
+
+    public Item getArmor() {
+        return armor;
+    }
+
+    public void setArmor(Item armor) {
+        this.armor = armor;
     }
 }

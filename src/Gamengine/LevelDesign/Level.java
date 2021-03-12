@@ -1,6 +1,7 @@
 package Gamengine.LevelDesign;
 
 import Gamengine.Character.NPC;
+import Gamengine.Item.Item;
 
 public class Level {
 
@@ -26,7 +27,7 @@ public class Level {
     }
 
     //Where an Item can be placed and picked up by an character.
-    public void placeItem() {
+    public void placeItem(Item item) {
 
     }
 
