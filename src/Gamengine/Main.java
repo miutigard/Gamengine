@@ -16,6 +16,7 @@ public class Main {
 
         PlayerCharacter Markus = new PlayerCharacter("Markus", 10, 2, 3);
 
+
         System.out.println(Markus);
         System.out.println(Sebastian);
 

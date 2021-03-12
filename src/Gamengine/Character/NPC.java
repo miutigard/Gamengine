@@ -73,7 +73,7 @@ public class NPC {
 
     //Interacting with non-hostile NPC when ur close to it (If NPC is a shopkeeper or smthing else idk u decide)
 
-    public void interact(String interactKey) {
+    public void interact() {
 
     }
 

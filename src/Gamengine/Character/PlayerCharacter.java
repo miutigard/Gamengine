@@ -98,25 +98,25 @@ public class PlayerCharacter {
     //Methods
 
     //Move player character methods
-    public void moveUp(String moveUpKey) {
+    public void moveUp() {
 
     }
 
-    public void moveDown(String moveDownKey) {
+    public void moveDown() {
 
     }
 
-    public void moveRight(String moveRightKey) {
+    public void moveRight() {
 
     }
 
-    public void moveLeft(String moveLeftKey) {
+    public void moveLeft() {
 
     }
 
     //Attack with player character
 
-    public void attack(String attackKey) {
+    public void attack() {
 
     }
 
