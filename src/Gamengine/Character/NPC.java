@@ -46,6 +46,14 @@ public class NPC {
         this.defence = defence;
     }
 
+    public String getInteractKey() {
+        return interactKey;
+    }
+
+    public void setInteractKey(String interactKey) {
+        this.interactKey = interactKey;
+    }
+
     //Use filelocation of picture file to set as a string to get the graphic for the player character.
     public String getGraphics() {
         return graphics;
@@ -63,7 +71,7 @@ public class NPC {
 
     }
 
-    //Interacting with non-hostile NPC (If NPC is a shopkeeper or smthing else idk u decide)
+    //Interacting with non-hostile NPC when ur close to it (If NPC is a shopkeeper or smthing else idk u decide)
 
     public void interact(String interactKey) {
 
