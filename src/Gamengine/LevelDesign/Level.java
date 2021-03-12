@@ -36,22 +36,22 @@ public class Level {
 
     //Where playercharacter spawns on the level.
 
-    public void spawnPoint() {
+    public void spawnPoint(int x, int y) {
 
     }
 
     //Where the level ends when the playercharacter walks on the grid.
-    public void endPoint() {
+    public void endPoint(int x, int y) {
 
     }
 
     //Where an eventual NPC will be placed on a level.
-    public void placeNPC(NPC npc) {
+    public void placeNPC(NPC npc, int x, int y) {
 
     }
 
     //Where an Item can be placed and picked up by an character.
-    public void placeItem(Item item) {
+    public void placeItem(Item item, int x, int y) {
 
     }
 
@@ -61,12 +61,12 @@ public class Level {
     }
 
     //Sets the graphic on one grid
-    public void setGraphicOnGrid(int levelX, int levelY) {
+    public void setGraphicOnGrid(String graphic, int x, int y) {
 
     }
 
     //Sets the graphic on the whole level
-    public void setGraphicOnWholeLevel() {
+    public void setGraphicOnWholeLevel(String graphic) {
 
     }
 

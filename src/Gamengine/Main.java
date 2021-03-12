@@ -1,8 +1,13 @@
 package Gamengine;
 
+import Gamengine.Character.NPC;
 import Gamengine.Character.PlayerCharacter;
+import Gamengine.Gamerun.GameRun;
 import Gamengine.Item.Armor;
+import Gamengine.Item.Consumable;
 import Gamengine.Item.Item;
+import Gamengine.Item.Weapon;
+import Gamengine.LevelDesign.Level;
 
 public class Main {
 
@@ -15,16 +20,49 @@ public class Main {
         Sebastian.setHitPoints(10);
         Sebastian.setAttack(3);
         Sebastian.setDefence(2);
+        Sebastian.setGraphics("Graphics/playerChar.png");
+        Sebastian.setAttackKey("Spacebar");
+        Sebastian.setInteractKey("E");
+        Sebastian.setMoveUpKey("W");
+        Sebastian.setMoveDownKey("S");
+        Sebastian.setMoveLeftKey("A");
+        Sebastian.setMoveRightKey("D");
 
-        PlayerCharacter Markus = new PlayerCharacter("Markus", 10, 2, 3);
+        NPC Markus = new NPC();
+        Markus.setName("Markus");
+        Markus.setHitPoints(10);
+        Markus.setAttack(3);
+        Markus.setDefence(2);
 
+        Weapon woodenCane = new Weapon();
+        woodenCane.setAttack(2);
+        woodenCane.setName("Great grandfathers old cane");
+        woodenCane.setGraphics("Graphics/woodenCane.png");
 
-        System.out.println(Markus);
-        System.out.println(Sebastian);
+        Armor leatherArmor = new Armor();
+        leatherArmor.setHitPoints(3);
+        leatherArmor.setDefence(1);
+        leatherArmor.setName("Old rugged leather armor");
+        leatherArmor.setGraphics("Graphics/leatherArmor.png");
 
-        Armor chestpiece = new Armor("Leather Armor", 20 , 10);
+        Consumable attackConsumable = new Consumable();
+        attackConsumable.setAttackStatIncrease(1);
+        attackConsumable.setName("Attack potion");
+        attackConsumable.setGraphics("Graphics/potion.png");
 
-        System.out.println(chestpiece.getName());
+        Level startingLevel = new Level();
+        startingLevel.setLevelX(16);
+        startingLevel.setLevelY(16);
+        startingLevel.createLevel();
+        startingLevel.setGraphicOnWholeLevel("Graphics/background1.png");
+        startingLevel.setGraphicOnGrid("Graphics/background2.png", 1, 1);
+        startingLevel.placeNPC(Markus, 1,16);
+        startingLevel.placeItem(woodenCane, 16, 1);
+        startingLevel.spawnPoint(1, 1);
+        startingLevel.endPoint(16,16);
 
+        GameRun gameRun = new GameRun();
+
+        gameRun.startGame();
     }
 }

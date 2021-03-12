@@ -4,16 +4,11 @@ public class GameRun {
 
     String pauseKey;
 
-    public GameRun() {
+    public GameRun() { 
 
     }
 
     public void startGame() {
 
     }
-
-    public void pauseGame() {
-
-    }
-
 }

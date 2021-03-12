@@ -2,7 +2,7 @@ package Gamengine.Item;
 
 public abstract class Item {
 
-    String name, graphics, interactKey;
+    String name, graphics;
 
     public Item() {
 
@@ -26,14 +26,6 @@ public abstract class Item {
 
     public void setGraphics(String graphics) {
         this.graphics = graphics;
-    }
-
-    public String getInteractKey() {
-        return interactKey;
-    }
-
-    public void setInteractKey(String interactKey) {
-        this.interactKey = interactKey;
     }
 
     //Methods

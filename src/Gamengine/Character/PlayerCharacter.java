@@ -2,7 +2,7 @@ package Gamengine.Character;
 
 public class PlayerCharacter extends Characters{
 
-    String moveUpKey, moveDownKey, moveRightKey, moveLeftKey, attackKey;
+    String moveUpKey, moveDownKey, moveRightKey, moveLeftKey, attackKey, interactKey;
 
     public PlayerCharacter() { }
 
@@ -48,6 +48,14 @@ public class PlayerCharacter extends Characters{
 
     public void setAttackKey(String attackKey) {
         this.attackKey = attackKey;
+    }
+
+    public String getInteractKey() {
+        return interactKey;
+    }
+
+    public void setInteractKey(String interactKey) {
+        this.interactKey = interactKey;
     }
 
     //Methods
