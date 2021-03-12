@@ -1,5 +1,7 @@
 package Gamengine.LevelDesign;
 
+import Gamengine.Character.NPC;
+
 public class Level {
 
     int levelX, levelY;
@@ -19,7 +21,12 @@ public class Level {
     }
 
     //Where an eventual NPC will be placed on a level.
-    public void placeNPC() {
+    public void placeNPC(NPC npc) {
+
+    }
+
+    //Where an Item can be placed and picked up by an character.
+    public void placeItem() {
 
     }
 

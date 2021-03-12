@@ -1,58 +1,13 @@
 package Gamengine.Character;
 
-public class PlayerCharacter {
+public class PlayerCharacter extends Characters{
 
-    String name, graphics, moveUpKey, moveDownKey, moveRightKey, moveLeftKey, attackKey;
-    int hitPoints, attack, defence;
+    String moveUpKey, moveDownKey, moveRightKey, moveLeftKey, attackKey;
 
     public PlayerCharacter() { }
 
     public PlayerCharacter(String name, int hitPoints, int attack, int defence) {
-        this.name = name;
-        this.hitPoints = hitPoints;
-        this.attack = attack;
-        this.defence = defence;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getHitPoints() {
-        return hitPoints;
-    }
-
-    public void setHitPoints(int hitPoints) {
-        this.hitPoints = hitPoints;
-    }
-
-    public int getAttack() {
-        return attack;
-    }
-
-    public void setAttack(int attack) {
-        this.attack = attack;
-    }
-
-    public int getDefence() {
-        return defence;
-    }
-
-    public void setDefence(int defence) {
-        this.defence = defence;
-    }
-
-    //Use filelocation of picture file to set as a string to get the graphic for the player character.
-    public String getGraphics() {
-        return graphics;
-    }
-
-    public void setGraphics(String graphics) {
-        this.graphics = graphics;
+        super(name, hitPoints, attack, defence);
     }
 
     public String getMoveUpKey() {
@@ -115,7 +70,6 @@ public class PlayerCharacter {
     }
 
     //Attack with player character
-
     public void attack() {
 
     }
