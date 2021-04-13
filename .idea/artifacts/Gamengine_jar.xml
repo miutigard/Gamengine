@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Gamengine:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Gamengine_jar</output-path>
+    <root id="archive" name="Gamengine.jar">
+      <element id="module-output" name="Gamengine" />
+    </root>
+  </artifact>
+</component>
